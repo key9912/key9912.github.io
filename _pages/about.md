@@ -9,8 +9,8 @@ redirect_from:
 
 Welcome to my homepage.
 
-I am Euiyoung Kim, an incoming Ph.D. student in the School of Mechanical Engineering at Purdue University. My research focuses on scientific machine learning and computational modeling for engineering systems. I am particularly interested in surrogate modeling, inverse design, neural operators, and solid rocket motor internal ballistics.
+I am Euiyoung Kim, an incoming Ph.D. student in the School of Mechanical Engineering at Purdue University. My research interests are in scientific machine learning (SciML) and fluid dynamics.
 
-I previously completed my M.S. at Korea Aerospace University, where my work centered on ANN- and GA-based inverse design frameworks for solid propellant grain optimization.
+I previously completed my M.S. in Aerospace Engineering at Korea Aerospace University.
 
 Here you can find information about my research, publications, projects, and academic background.
