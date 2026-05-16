@@ -1,63 +1,68 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Euiyoung Kim",
+    "email": "rladmldud0681@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://key9912.github.io",
+    "summary": "Incoming Ph.D. student in Mechanical Engineering at Purdue University. Research interests include scientific machine learning, computational fluid dynamics, and physics-informed modeling.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "West Lafayette",
       "countryCode": "US",
-      "region": ""
+      "region": "IN"
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://scholar.google.com/citations?hl=en&user=K1SxKroAAAAJ"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "key9912",
+        "url": "https://github.com/key9912"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "euiyoung-kim-369528264",
+        "url": "https://www.linkedin.com/in/euiyoung-kim-369528264/"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "Purdue University",
+      "area": "Mechanical Engineering",
+      "studyType": "Ph.D.",
+      "startDate": "2026-08",
+      "endDate": "Present",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "institution": "Korea Aerospace University",
+      "area": "Aerospace and Mechanical Engineering",
+      "studyType": "M.S.",
+      "startDate": "2024-03",
+      "endDate": "2025-08",
+      "gpa": "4.0/4.0",
+      "courses": [
+        "Combined B.S./M.S. Program"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "Korea Aerospace University",
+      "area": "Aerospace and Mechanical Engineering",
+      "studyType": "B.E.",
+      "startDate": "2018-03",
+      "endDate": "2024-02",
+      "gpa": "3.75/4.0",
+      "courses": [
+        "Magna Cum Laude",
+        "Includes mandatory military service, 2019-2021"
+      ]
     }
   ],
   "skills": [],
@@ -66,87 +71,20 @@
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Inverse design framework for optimizing solid propellant grains toward target performance profiles",
+      "publisher": "Acta Astronautica",
+      "releaseDate": "2025",
+      "website": "https://doi.org/10.1016/j.actaastro.2025.09.039",
+      "summary": "First author."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Numerical investigations on double Savonius vertical axis wind turbines with a deflector: Effects of turbine and deflector-related parameters",
+      "publisher": "Energy Reports",
+      "releaseDate": "2025",
+      "website": "https://doi.org/10.1016/j.egyr.2025.11.095",
+      "summary": "Second author."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "portfolio": []
 }
