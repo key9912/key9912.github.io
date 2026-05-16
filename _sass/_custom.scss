@@ -94,7 +94,7 @@
   align-items: center;
   min-height: 2.35rem;
   padding: 0.48rem 0.78rem;
-  color: var(--global-bg-color);
+  color: #fff;
   font-family: $sans-serif;
   font-size: $type-size-6;
   font-weight: 700;
@@ -105,7 +105,7 @@
 }
 
 .quick-links a:hover {
-  color: var(--global-bg-color);
+  color: #fff;
   background: var(--global-link-color-hover);
   text-decoration: none;
 }
@@ -152,4 +152,15 @@
   .intro-title {
     font-size: $type-size-3;
   }
+}
+
+html[data-theme="dark"] {
+  --global-code-background-color: #3f3f3f;
+  --global-code-text-color: #f3f3f3;
+  --global-thead-color: #5a5a5a;
+}
+
+html[data-theme="dark"] .research-tags li,
+html[data-theme="dark"] .highlight-card {
+  background: transparent;
 }
