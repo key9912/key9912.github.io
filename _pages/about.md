@@ -26,6 +26,7 @@ redirect_from:
 <div class="quick-links">
   <a href="/publications/">Publications</a>
   <a href="/talks/">Talks</a>
+  <a href="/cv/">CV</a>
   <a href="https://scholar.google.com/citations?hl=en&user=K1SxKroAAAAJ">Google Scholar</a>
   <a href="https://github.com/key9912">GitHub</a>
 </div>
