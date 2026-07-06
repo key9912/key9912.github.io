@@ -16,6 +16,7 @@
     var encodedUrl = encodeURIComponent(trackedUrl);
     var timezone = "Asia/Seoul";
     var apiBase = "https://hitscounter.dev/api";
+    var sessionKey = "key9912VisitorCounted";
 
     function setText(selector, value) {
       var target = document.querySelector(selector);
@@ -42,16 +43,44 @@
             return String(item.hit_date).slice(0, 10) === yesterday;
           });
           setText("[data-visitor-yesterday]", match ? match.hit_count : 0);
+          return data;
         });
     }
 
-    fetch(apiBase + "/hit?output=json&url=" + encodedUrl + "&tz=" + encodeURIComponent(timezone))
+    function updateCounter(data) {
+      setText("[data-visitor-total]", data.total_hits);
+      setText("[data-visitor-today]", data.today_hits);
+      return updateYesterday();
+    }
+
+    function hasCountedThisSession() {
+      try {
+        return window.sessionStorage.getItem(sessionKey) === "true";
+      } catch (error) {
+        return false;
+      }
+    }
+
+    function markCountedThisSession() {
+      try {
+        window.sessionStorage.setItem(sessionKey, "true");
+      } catch (error) {
+        // Ignore storage failures and still render the counter.
+      }
+    }
+
+    var shouldCountVisit = !hasCountedThisSession();
+    var counterUrl = shouldCountVisit
+      ? apiBase + "/hit?output=json&url=" + encodedUrl + "&tz=" + encodeURIComponent(timezone)
+      : apiBase + "/history?url=" + encodedUrl;
+
+    fetch(counterUrl)
       .then(function (response) { return response.json(); })
       .then(function (data) {
-        setText("[data-visitor-total]", data.total_hits);
-        setText("[data-visitor-today]", data.today_hits);
-        return updateYesterday();
+        if (shouldCountVisit) markCountedThisSession();
+        return data;
       })
+      .then(updateCounter)
       .catch(function () {
         setText("[data-visitor-total]", "-");
         setText("[data-visitor-today]", "-");
