@@ -16,7 +16,7 @@
     var encodedUrl = encodeURIComponent(trackedUrl);
     var timezone = "Asia/Seoul";
     var apiBase = "https://hitscounter.dev/api";
-    var sessionKey = "key9912VisitorCounted";
+    var storageKey = "key9912VisitorLastCountedDate";
 
     function setText(selector, value) {
       var target = document.querySelector(selector);
@@ -53,33 +53,42 @@
       return updateYesterday();
     }
 
-    function hasCountedThisSession() {
+    function markCountedToday() {
       try {
-        return window.sessionStorage.getItem(sessionKey) === "true";
+        window.localStorage.setItem(storageKey, seoulDate(0));
+      } catch (error) {
+        try {
+          window.sessionStorage.setItem(storageKey, seoulDate(0));
+        } catch (storageError) {
+          // Ignore storage failures and still render the counter.
+        }
+      }
+    }
+
+    function hasCountedToday() {
+      var today = seoulDate(0);
+      try {
+        if (window.localStorage.getItem(storageKey) === today) return true;
+      } catch (error) {
+        // Fall through to sessionStorage.
+      }
+
+      try {
+        return window.sessionStorage.getItem(storageKey) === today;
       } catch (error) {
         return false;
       }
     }
 
-    function markCountedThisSession() {
-      try {
-        window.sessionStorage.setItem(sessionKey, "true");
-      } catch (error) {
-        // Ignore storage failures and still render the counter.
-      }
-    }
+    var shouldCountVisit = !hasCountedToday();
+    if (shouldCountVisit) markCountedToday();
 
-    var shouldCountVisit = !hasCountedThisSession();
     var counterUrl = shouldCountVisit
       ? apiBase + "/hit?output=json&url=" + encodedUrl + "&tz=" + encodeURIComponent(timezone)
       : apiBase + "/history?url=" + encodedUrl;
 
     fetch(counterUrl)
       .then(function (response) { return response.json(); })
-      .then(function (data) {
-        if (shouldCountVisit) markCountedThisSession();
-        return data;
-      })
       .then(updateCounter)
       .catch(function () {
         setText("[data-visitor-total]", "-");
