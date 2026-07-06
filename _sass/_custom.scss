@@ -173,7 +173,7 @@ html[data-theme="dark"] .highlight-card {
 .visitor-counter {
   position: absolute;
   top: 0.58rem;
-  right: max(1rem, calc((100vw - #{$x-large}) / 2 + 1rem));
+  right: 1rem;
   z-index: 30;
   width: 5.75rem;
   padding: 0.22rem 0.32rem 0.25rem;
@@ -239,6 +239,12 @@ html[data-theme="dark"] .visitor-counter__header {
 
 html[data-theme="dark"] .visitor-counter__icon span {
   background: #ddd;
+}
+
+@media screen and (min-width: $x-large) {
+  .visitor-counter {
+    right: calc((100vw - #{$x-large}) / 2 + 1rem);
+  }
 }
 
 @media screen and (max-width: 900px) {
