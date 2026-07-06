@@ -165,17 +165,9 @@ html[data-theme="dark"] .highlight-card {
   background: transparent;
 }
 
-.masthead__menu {
-  position: relative;
-  padding-right: 6.75rem;
-}
-
 .visitor-counter {
-  position: absolute;
-  top: 0.58rem;
-  right: 1rem;
-  z-index: 30;
   width: 5.75rem;
+  margin: 2rem 1rem 1rem auto;
   padding: 0.22rem 0.32rem 0.25rem;
   color: #555;
   font-family: Arial, Helvetica, sans-serif;
@@ -243,15 +235,11 @@ html[data-theme="dark"] .visitor-counter__icon span {
 
 @media screen and (min-width: $x-large) {
   .visitor-counter {
-    right: calc((100vw - #{$x-large}) / 2 + 1rem);
+    margin-right: calc((100vw - #{$x-large}) / 2 + 1rem);
   }
 }
 
 @media screen and (max-width: 900px) {
-  .masthead__menu {
-    padding-right: 0;
-  }
-
   .visitor-counter {
     display: none;
   }
