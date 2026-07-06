@@ -60,7 +60,6 @@
         try {
           window.sessionStorage.setItem(storageKey, seoulDate(0));
         } catch (storageError) {
-          // Ignore storage failures and still render the counter.
         }
       }
     }
@@ -70,7 +69,6 @@
       try {
         if (window.localStorage.getItem(storageKey) === today) return true;
       } catch (error) {
-        // Fall through to sessionStorage.
       }
 
       try {
