@@ -1,0 +1,61 @@
+<aside class="visitor-counter" aria-label="Visitor statistics">
+  <div class="visitor-counter__header">
+    <span class="visitor-counter__icon" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </span>
+    <span>Visitors</span>
+  </div>
+  <div class="visitor-counter__line">Total: <span data-visitor-total>...</span></div>
+  <div class="visitor-counter__line">Today: <span data-visitor-today>...</span></div>
+  <div class="visitor-counter__line">Yesterday: <span data-visitor-yesterday>...</span></div>
+</aside>
+
+<script>
+  (function () {
+    var trackedUrl = "https://key9912.github.io";
+    var encodedUrl = encodeURIComponent(trackedUrl);
+    var timezone = "Asia/Seoul";
+    var apiBase = "https://hitscounter.dev/api";
+
+    function setText(selector, value) {
+      var target = document.querySelector(selector);
+      if (target) target.textContent = value == null ? "0" : String(value);
+    }
+
+    function seoulDate(offsetDays) {
+      var date = new Date();
+      date.setDate(date.getDate() + offsetDays);
+      return new Intl.DateTimeFormat("en-CA", {
+        timeZone: timezone,
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }).format(date);
+    }
+
+    function updateYesterday() {
+      return fetch(apiBase + "/history?url=" + encodedUrl)
+        .then(function (response) { return response.json(); })
+        .then(function (data) {
+          var yesterday = seoulDate(-1);
+          var match = (data.history || []).find(function (item) {
+            return String(item.hit_date).slice(0, 10) === yesterday;
+          });
+          setText("[data-visitor-yesterday]", match ? match.hit_count : 0);
+        });
+    }
+
+    fetch(apiBase + "/hit?output=json&url=" + encodedUrl + "&tz=" + encodeURIComponent(timezone))
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        setText("[data-visitor-total]", data.total_hits);
+        setText("[data-visitor-today]", data.today_hits);
+        return updateYesterday();
+      })
+      .catch(function () {
+        setText("[data-visitor-total]", "-");
+        setText("[data-visitor-today]", "-");
+        setText("[data-visitor-yesterday]", "-");
+      });
+  })();
+</script>
