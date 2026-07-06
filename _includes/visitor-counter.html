@@ -34,23 +34,28 @@
       }).format(date);
     }
 
-    function updateYesterday() {
+    function updateFromHistory(initialData) {
       return fetch(apiBase + "/history?url=" + encodedUrl)
         .then(function (response) { return response.json(); })
         .then(function (data) {
+          var today = seoulDate(0);
           var yesterday = seoulDate(-1);
+          var todayMatch = (data.history || []).find(function (item) {
+            return String(item.hit_date).slice(0, 10) === today;
+          });
           var match = (data.history || []).find(function (item) {
             return String(item.hit_date).slice(0, 10) === yesterday;
           });
+
+          setText("[data-visitor-total]", data.total_hits != null ? data.total_hits : initialData.total_hits);
+          setText("[data-visitor-today]", todayMatch ? todayMatch.hit_count : initialData.today_hits);
           setText("[data-visitor-yesterday]", match ? match.hit_count : 0);
           return data;
         });
     }
 
     function updateCounter(data) {
-      setText("[data-visitor-total]", data.total_hits);
-      setText("[data-visitor-today]", data.today_hits);
-      return updateYesterday();
+      return updateFromHistory(data);
     }
 
     function markCountedToday() {
