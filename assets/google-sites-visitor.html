@@ -120,12 +120,17 @@
       function day(offset) {
         var date = new Date();
         date.setDate(date.getDate() + offset);
-        return new Intl.DateTimeFormat("en-CA", {
+        var parts = new Intl.DateTimeFormat("en-US", {
           timeZone: timezone,
           year: "numeric",
           month: "2-digit",
           day: "2-digit"
-        }).format(date);
+        }).formatToParts(date);
+        var values = {};
+        parts.forEach(function (part) {
+          values[part.type] = part.value;
+        });
+        return values.year + "-" + values.month + "-" + values.day;
       }
 
       function cookieValue() {
@@ -176,7 +181,7 @@
               return String(row.hit_date).slice(0, 10) === yesterday;
             });
             setText("[data-total]", json.total_hits != null ? json.total_hits : fallback.total_hits);
-            setText("[data-today]", todayRow ? todayRow.hit_count : fallback.today_hits);
+            setText("[data-today]", todayRow ? todayRow.hit_count : 0);
             setText("[data-yesterday]", yesterdayRow ? yesterdayRow.hit_count : 0);
           });
       }
