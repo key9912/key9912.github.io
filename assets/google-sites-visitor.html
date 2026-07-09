@@ -109,7 +109,7 @@
       var encodedUrl = encodeURIComponent(trackedUrl);
       var timezone = "Asia/Seoul";
       var apiBase = "https://hitscounter.dev/api";
-      var countedKey = "key9912GoogleSitesVisitorCountedOnce";
+      var countedKey = "key9912GoogleSitesVisitorLastCountedDate";
       var probeKey = "key9912GoogleSitesStorageProbe";
 
       function setText(selector, value) {
@@ -186,15 +186,16 @@
           });
       }
 
+      var today = day(0);
       var store = storage();
-      var seenCookie = cookieValue() === "1";
-      var seenStore = store ? store.getItem(countedKey) === "1" : false;
-      var canRemember = !!store || setCookie("1");
+      var seenCookie = cookieValue() === today;
+      var seenStore = store ? store.getItem(countedKey) === today : false;
+      var canRemember = !!store || setCookie(today);
       var shouldHit = canRemember && !seenCookie && !seenStore;
 
       if (shouldHit) {
-        if (store) store.setItem(countedKey, "1");
-        setCookie("1");
+        if (store) store.setItem(countedKey, today);
+        setCookie(today);
       }
 
       fetch(shouldHit
