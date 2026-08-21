@@ -11,7 +11,7 @@ redirect_from:
   <p class="intro-kicker">Scientific Machine Learning / Fluid Dynamics</p>
   <h2 class="intro-title">I build data-driven and physics-aware models for fluid-flow problems.</h2>
   <p class="intro-summary">
-    I am Euiyoung Kim, an incoming Ph.D. student in the School of Mechanical Engineering at Purdue University. My research interests sit at the intersection of scientific machine learning, computational fluid dynamics, and reduced-order modeling for complex flow systems.
+    I am Euiyoung Kim, a Ph.D. student in the School of Mechanical Engineering at Purdue University. My research interests sit at the intersection of scientific machine learning, computational fluid dynamics, and reduced-order modeling for complex flow systems.
   </p>
 </section>
 
@@ -51,7 +51,7 @@ redirect_from:
 ## Background
 
 <ul class="timeline-list">
-  <li><strong>Ph.D. student, Mechanical Engineering</strong>, Purdue University, incoming.</li>
+  <li><strong>Ph.D. student, Mechanical Engineering</strong>, Purdue University.</li>
   <li><strong>M.S. in Aerospace Engineering</strong>, Korea Aerospace University.</li>
 </ul>
 
