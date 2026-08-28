@@ -14,7 +14,7 @@
   (function () {
     var trackedUrl = "https://key9912.github.io";
     var encodedUrl = encodeURIComponent(trackedUrl);
-    var timezone = "Asia/Seoul";
+    var timezone = "America/Indiana/Indianapolis";
     var apiBase = "https://hitscounter.dev/api";
     var storageKey = "key9912VisitorLastCountedDate";
 
@@ -23,7 +23,7 @@
       if (target) target.textContent = value == null ? "0" : String(value);
     }
 
-    function seoulDate(offsetDays) {
+    function localDate(offsetDays) {
       var date = new Date();
       date.setDate(date.getDate() + offsetDays);
       return new Intl.DateTimeFormat("en-CA", {
@@ -38,8 +38,8 @@
       return fetch(apiBase + "/history?url=" + encodedUrl)
         .then(function (response) { return response.json(); })
         .then(function (data) {
-          var today = seoulDate(0);
-          var yesterday = seoulDate(-1);
+          var today = localDate(0);
+          var yesterday = localDate(-1);
           var todayMatch = (data.history || []).find(function (item) {
             return String(item.hit_date).slice(0, 10) === today;
           });
@@ -60,17 +60,17 @@
 
     function markCountedToday() {
       try {
-        window.localStorage.setItem(storageKey, seoulDate(0));
+        window.localStorage.setItem(storageKey, localDate(0));
       } catch (error) {
         try {
-          window.sessionStorage.setItem(storageKey, seoulDate(0));
+          window.sessionStorage.setItem(storageKey, localDate(0));
         } catch (storageError) {
         }
       }
     }
 
     function hasCountedToday() {
-      var today = seoulDate(0);
+      var today = localDate(0);
       try {
         if (window.localStorage.getItem(storageKey) === today) return true;
       } catch (error) {
