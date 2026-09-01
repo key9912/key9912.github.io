@@ -9,4 +9,6 @@ tags:
 
 I am excited to share that I will be joining Professor Romit Maulik's ISCL at Purdue University.
 
+![Kickoff with ISCL](/images/kickoff.png)
+
 I look forward to contributing to research at the intersection of scientific machine learning, computational fluid dynamics, and physics-informed modeling as I begin my Ph.D. journey in Mechanical Engineering.
