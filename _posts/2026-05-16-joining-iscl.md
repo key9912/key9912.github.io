@@ -5,6 +5,8 @@ permalink: /posts/2026/05/joining-iscl/
 tags:
   - news
   - ISCL
+header:
+  teaser: kickoff.png
 ---
 
 I am excited to share that I will be joining Professor Romit Maulik's ISCL at Purdue University.
