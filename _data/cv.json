@@ -71,6 +71,13 @@
   "references": [],
   "publications": [
     {
+      "name": "Inverse design of Finocyl-type solid rocket grains for thrust-profile matching using surrogate-assisted optimization",
+      "publisher": "Aerospace Science and Technology",
+      "releaseDate": "2026",
+      "website": "https://doi.org/10.1016/j.ast.2026.113772",
+      "summary": "First author."
+    },
+    {
       "name": "Inverse design framework for optimizing solid propellant grains toward target performance profiles",
       "publisher": "Acta Astronautica",
       "releaseDate": "2025",
