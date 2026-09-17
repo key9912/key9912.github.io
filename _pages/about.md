@@ -30,7 +30,7 @@ redirect_from:
     <p>Learning flow representations that respect physical structure and remain useful beyond a narrow training regime.</p>
   </article>
   <article class="highlight-card">
-    <h3>Data Assimilation and CFD</h3>
+    <h3>Data Assimilation</h3>
     <p>Combining observations, numerical simulation, and interpretable analysis for aerodynamic and fluid systems.</p>
   </article>
   <article class="highlight-card">
