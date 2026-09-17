@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 ---
@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 <p>
-  <a href="{{ base_path }}/files/Resume_Euiyoung_Kim.pdf" class="btn btn--primary">Download CV as PDF</a>
+  <a href="{{ base_path }}/files/Resume_Euiyoung_Kim.pdf" class="btn btn--primary">Download CV (PDF)</a>
 </p>
 
 <iframe

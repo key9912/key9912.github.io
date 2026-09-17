@@ -13,7 +13,7 @@ author_profile: true
 
 {% if site.talks.size > 0 %}
   {% for post in site.talks reversed %}
-    {% include archive-single-talk.html %}
+    {% include archive-single-talk.html hide_excerpt=true %}
   {% endfor %}
 {% else %}
   <p>No talks or presentations are listed yet.</p>
