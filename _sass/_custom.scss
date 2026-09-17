@@ -1,5 +1,21 @@
 /* Site-specific polish for Euiyoung Kim's academic homepage. */
 
+:root {
+  --global-base-color: #4f6f91;
+  --global-link-color: #4f6f91;
+  --global-link-color-hover: #3f5d7d;
+  --global-link-color-visited: #647b98;
+  --global-masthead-link-color-hover: #4f6f91;
+}
+
+html[data-theme="dark"] {
+  --global-base-color: #7894af;
+  --global-link-color: #8fa8c2;
+  --global-link-color-hover: #adc0d2;
+  --global-link-color-visited: #a2b4c8;
+  --global-masthead-link-color-hover: #8fa8c2;
+}
+
 .site-title {
   font-weight: 700;
 }
@@ -19,6 +35,14 @@
 .page__content a {
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+}
+
+.btn {
+  background-color: var(--global-base-color);
+}
+
+.btn:hover {
+  background-color: var(--global-link-color-hover);
 }
 
 .author__avatar img {

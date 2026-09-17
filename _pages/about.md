@@ -8,15 +8,15 @@ redirect_from:
 ---
 
 <section class="intro-panel">
-  <p class="intro-kicker">Scientific Machine Learning / Fluid Dynamics</p>
-  <h2 class="intro-title">I build data-driven and physics-aware models for fluid-flow problems.</h2>
+  <p class="intro-kicker">Scientific Machine Learning / Data Assimilation / Fluid Dynamics</p>
   <p class="intro-summary">
-    I am Euiyoung Kim, a Ph.D. student in the School of Mechanical Engineering at Purdue University. My research interests sit at the intersection of scientific machine learning, computational fluid dynamics, and reduced-order modeling for complex flow systems.
+    I am Euiyoung Kim, a Ph.D. student in the School of Mechanical Engineering at Purdue University. My research interests include scientific machine learning, data assimilation, computational fluid dynamics, and reduced-order modeling for complex flow systems.
   </p>
 </section>
 
 <ul class="research-tags">
   <li>Scientific Machine Learning</li>
+  <li>Data Assimilation</li>
   <li>Computational Fluid Dynamics</li>
   <li>Physics-Informed Modeling</li>
   <li>Reduced-Order Models</li>
@@ -39,8 +39,8 @@ redirect_from:
     <p>Learning flow representations that respect physical structure and remain useful beyond a narrow training regime.</p>
   </article>
   <article class="highlight-card">
-    <h3>CFD and Modeling</h3>
-    <p>Connecting numerical simulation, data-driven modeling, and interpretable analysis for aerodynamic and fluid systems.</p>
+    <h3>Data Assimilation and CFD</h3>
+    <p>Combining observations, numerical simulation, and interpretable analysis for aerodynamic and fluid systems.</p>
   </article>
   <article class="highlight-card">
     <h3>Efficient Prediction</h3>
@@ -57,4 +57,4 @@ redirect_from:
 
 ## Contact
 
-I am always happy to connect about scientific machine learning, computational fluid dynamics, and research collaboration. The quickest way to reach me is by email through the sidebar.
+I am always happy to connect about scientific machine learning, data assimilation, computational fluid dynamics, and research collaboration. The quickest way to reach me is by email through the sidebar.
