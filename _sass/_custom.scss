@@ -6,6 +6,7 @@
   --global-link-color-hover: #122744;
   --global-link-color-visited: #314b70;
   --global-masthead-link-color-hover: #1a355b;
+  --global-border-color: #c9ced6;
 }
 
 html[data-theme="dark"] {
@@ -170,10 +171,14 @@ html[data-theme="dark"] {
 
 .publication-role {
   margin: 0.2rem 0 0.35rem;
-  color: var(--global-link-color);
+  padding: 0;
+  color: var(--global-text-color);
   font-family: $sans-serif;
   font-size: $type-size-6;
   font-weight: 700;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
 }
 
 .highlight-grid {
