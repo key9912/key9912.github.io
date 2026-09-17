@@ -7,6 +7,7 @@ excerpt: "This paper proposes a surrogate-assisted inverse design framework that
 date: 2025-09-17
 venue: "Acta Astronautica"
 paperurl: "https://doi.org/10.1016/j.actaastro.2025.09.039"
+role: "First author"
 citation: 'Kim, E., Joo, S., & Oh, S. (2025). "Inverse design framework for optimizing solid propellant grains toward target performance profiles." <i>Acta Astronautica</i>.'
 ---
 This study presents a computational optimization framework for the inverse design of solid rocket motor (SRM) propellant grains to achieve target thrust-time performance profiles.  

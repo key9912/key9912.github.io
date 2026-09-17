@@ -7,6 +7,7 @@ excerpt: "This paper presents a surrogate-assisted optimization framework for in
 date: 2026-09-15
 venue: "Aerospace Science and Technology"
 paperurl: "https://doi.org/10.1016/j.ast.2026.113772"
+role: "First author"
 citation: 'Kim, E., Kim, M., Kwon, M., Joo, S., & Oh, S. (2026). "Inverse design of Finocyl-type solid rocket grains for thrust-profile matching using surrogate-assisted optimization." <i>Aerospace Science and Technology</i>, 113772.'
 ---
 This study presents a surrogate-assisted optimization framework for the inverse design of Finocyl-type solid rocket motor grains to match target thrust-profile requirements.

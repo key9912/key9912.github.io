@@ -8,20 +8,10 @@ redirect_from:
 ---
 
 <section class="intro-panel">
-  <p class="intro-kicker">Scientific Machine Learning / Data Assimilation / Fluid Dynamics</p>
   <p class="intro-summary">
     I am Euiyoung Kim, a Ph.D. student in the School of Mechanical Engineering at Purdue University. My research interests include scientific machine learning, data assimilation, computational fluid dynamics, and reduced-order modeling for complex flow systems.
   </p>
 </section>
-
-<ul class="research-tags">
-  <li>Scientific Machine Learning</li>
-  <li>Data Assimilation</li>
-  <li>Computational Fluid Dynamics</li>
-  <li>Reduced-Order Models</li>
-  <li>Fluid Dynamics</li>
-  <li>Physics-Informed Modeling</li>
-</ul>
 
 <div class="quick-links">
   <a href="/publications/">Publications</a>
@@ -31,6 +21,15 @@ redirect_from:
   <a href="https://scholar.google.com/citations?hl=en&user=K1SxKroAAAAJ">Google Scholar</a>
   <a href="https://github.com/key9912">GitHub</a>
 </div>
+
+<ul class="research-tags">
+  <li>Scientific Machine Learning</li>
+  <li>Data Assimilation</li>
+  <li>Computational Fluid Dynamics</li>
+  <li>Reduced-Order Models</li>
+  <li>Fluid Dynamics</li>
+  <li>Physics-Informed Modeling</li>
+</ul>
 
 ## Research Focus
 

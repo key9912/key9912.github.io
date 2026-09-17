@@ -7,6 +7,7 @@ excerpt: "This paper presents a numerical investigation of double Savonius verti
 date: 2025-12-01
 venue: "Energy Reports"
 paperurl: "https://doi.org/10.1016/j.egyr.2025.11.095"
+role: "Co-author"
 citation: 'Han, Y., Kim, E., & Oh, S. (2025). "Numerical investigations on double Savonius vertical axis wind turbines with a deflector: Effects of turbine and deflector-related parameters." <i>Energy Reports</i>, 14, 4950–4962.'
 ---
 This study numerically investigates the aerodynamic performance of double Savonius-type vertical axis wind turbines (VAWTs) equipped with a deflector, using computational fluid dynamics (CFD) simulations. The performance of the proposed configuration is compared with that of conventional Savonius turbines without a deflector.
