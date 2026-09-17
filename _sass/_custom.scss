@@ -169,11 +169,18 @@ html[data-theme="dark"] {
 }
 
 .publication-role {
-  margin: 0.2rem 0 0.35rem;
-  color: var(--global-link-color);
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0.25rem 0 0.45rem;
+  padding: 0.18rem 0.48rem;
+  color: #fff;
   font-family: $sans-serif;
   font-size: $type-size-6;
   font-weight: 700;
+  line-height: 1.2;
+  background: var(--global-link-color);
+  border-radius: 5px;
 }
 
 .highlight-grid {
