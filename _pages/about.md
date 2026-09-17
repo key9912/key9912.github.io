@@ -18,14 +18,15 @@ redirect_from:
   <li>Scientific Machine Learning</li>
   <li>Data Assimilation</li>
   <li>Computational Fluid Dynamics</li>
-  <li>Physics-Informed Modeling</li>
   <li>Reduced-Order Models</li>
   <li>Fluid Dynamics</li>
+  <li>Physics-Informed Modeling</li>
 </ul>
 
 <div class="quick-links">
   <a href="/publications/">Publications</a>
   <a href="/talks/">Talks</a>
+  <a href="/year-archive/">News</a>
   <a href="/cv/">CV</a>
   <a href="https://scholar.google.com/citations?hl=en&user=K1SxKroAAAAJ">Google Scholar</a>
   <a href="https://github.com/key9912">GitHub</a>
@@ -52,7 +53,7 @@ redirect_from:
 
 <ul class="timeline-list">
   <li><strong>Ph.D. student, Mechanical Engineering</strong>, Purdue University.</li>
-  <li><strong>M.S. in Aerospace Engineering</strong>, Korea Aerospace University.</li>
+  <li><strong>B.S. / M.S. in Aerospace Engineering</strong>, Korea Aerospace University.</li>
 </ul>
 
 ## Contact
