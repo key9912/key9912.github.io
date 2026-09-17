@@ -9,7 +9,7 @@ redirect_from:
 
 <section class="intro-panel">
   <p class="intro-summary">
-    I am Euiyoung Kim, a Ph.D. student in the School of Mechanical Engineering at Purdue University. My research interests include scientific machine learning, data assimilation, computational fluid dynamics, and reduced-order modeling for complex flow systems.
+    I am Euiyoung Kim, a Ph.D. student in the School of Mechanical Engineering at Purdue University, advised by Prof. Romit Maulik. I am a member of the <strong>Interdisciplinary Scientific Computing Laboratory</strong> (ISCL), where my research focuses on scientific machine learning, data assimilation, computational fluid dynamics, and reduced-order modeling for complex flow systems. More information about the lab is available through <a href="https://romit-maulik.github.io/">Prof. Maulik's group page</a>.
   </p>
 </section>
 
